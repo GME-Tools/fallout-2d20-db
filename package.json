@@ -1,7 +1,15 @@
 {
   "name": "fallout-2d20-db",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Unofficial Fallout 2d20 JSON Database",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --watch server.js",
+    "test": "json-server ./data/sources2.json"
+  },
   "repository": "git@github.com:GME-Tools/fallout-2d20-db.git",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
 }
