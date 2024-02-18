@@ -1,0 +1,7 @@
+{
+  "name": "fallout-2d20-db",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:GME-Tools/fallout-2d20-db.git",
+  "license": "MIT"
+}
