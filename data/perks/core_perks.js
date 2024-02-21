@@ -1,4 +1,4 @@
-module.eports = [
+module.exports = [
     {
         id: "ami_animaux",
         name: "Ami des Animaux",
@@ -255,8 +255,71 @@ module.eports = [
         name: "Expert en robotique",
         ranks: 3,
         prereq: {int: 8, level: 2},
-        description: "<p>Au rang 1, vous pouvez modifier l'armure des robots, leurs armes montées et leurs modules avec des mods de rang 1. Au rang 2, vous débloquez l'accès aux mods de rang 2 et vous réduisez de 1 la difficulté de tous vos tests de réparation de robots. Au rang 3, vous débloquez l'accès aux mods de rang 3 et vous pouvez reprogrammer les robots pour qu'ils remplissent une toute autre fonction ou altérer leur comportement si le MJ vous y autorise.</p>",
+        description: "<p>Au rang 1, vous pouvez modifier l'armure des robots, leurs armes montées et leurs modules avec des mods de rang 1. Au rang 2, vous débloquez l'accès aux mods de rang 2 et vous réduisez de 1 la difficulté de tous vos tests de réparation de robots. Au rang 3, vous débloquez l'accès aux mods de rang 3 et vous pouvez reprogrammer les robots pour qu'ils remplissent une toute autre fonction ou altérer leur comportement si le MJ vous y autorise.</p><p>Chaque fois que vous sélectionnez cette aptitude, le niveau requis augmente de 4.</p>",
         sourcesId: ["core"],
         pages: [63]
+    },
+    {
+        id: "fana_armes",
+        name: "Fana d'Armes",
+        ranks: 4,
+        prereq: {int: 6, level: 2},
+        description: "<p>Vous pouvez modifier les armes légères grâce à des mods d'arme. Chaque rang dans cette aptitude débloque un rang de mod : le rang 1 débloque les mods de rang 1, le rang 2 débloque les mods de rang 2, etc.</p><p>Chaque fois que vous sélectionnez cette aptitude, le niveau requis augmente de 4.</p>",
+        sourcesId: ["core"],
+        pages: [64]
+    },
+    {
+        id: "fana_capsules",
+        name: "Fana de Capsules",
+        ranks: 1,
+        prereq: {chr: 5},
+        description: "<p>Lorsque vous vendez ou achetez des objets, vous pouvez augmenter ou diminuer le prix des biens échangés de 10%.</p>",
+        sourcesId: ["core"],
+        pages: [64]
+    },
+    {
+        id: "fantome",
+        name: "Fantôme",
+        ranks: 1,
+        prereq: {per: 5, agi: 6},
+        description: "<p>Lorsque vous entreprenez un test d'<b>AGI + Discrétion</b> alors que vous trouvez dans l'ombre ou l'obscurité, le premier d20 supplémentaire est gratuit. La limite de 5d20 s'applique toujours à la réserve.</p>",
+        sourcesId: ["core"],
+        pages: [64]
+    },
+    {
+        id: "farfouilleur",
+        name: "Farfouilleur",
+        ranks: 3,
+        prereq: {cha: 6, level: 1},
+        description: "<p>Chaque fois que vous lancez les dés pour savoir combien de munitions vous trouvez, vous en trouvez plus. Au rang 1, vous trouvez +3 $CD$ supplémentaires de munitions. Au rang 2, vous trouvez +6 $CD$ supplémentaires de munitions. Enfin, au rang 3, vous trouvez +10 $CD$ supplémentaires de munitions. Les munitions supplémentaires que vous trouvez sont du même type que les munitions que vous dénichez initialement. Par exemple, si vous trouvez des cartouches de 10mm, cette aptitude augmente le nombre de cartouches 10mm que vous dénichez. Si vous trouvez plusieurs types de munitions, Farfouilleue vous permet d'augmenter le nombre de munitions dont la rareté est la plus faible (en cas d'égalité, le MJ tranche).</p><p>Chaque fois que vous sélectionnez cette aptitude, le niveau requis augmente de 5.</p>",
+        sourcesId: ["core"],
+        pages: [64]
+    },
+    {
+        id: "farmer_pharma",
+        name: "Farmer la Pharma",
+        ranks: 1,
+        prereq: {cha: 6},
+        description: "<p>Lorsque vous fouillez un lieu contenant des médicaments ou des drogues, vous découvrez un objet supplémentaire, tiré au hasard, et ce, sans dépenser de PA.</p>",
+        sourcesId: ["core"],
+        pages: [64]
+    },
+    {
+        id: "fetard",
+        name: "Fêtard/Fêtarde",
+        ranks: 1,
+        prereq: {end: 6, chr: 7},
+        description: "<p>Vous ne pouvez pas devenir dépendant aux boissons alcoolisées, chaque fois que vous buvez ce type de boisson, vous regagnez +2 PV.</p>",
+        sourcesId: ["core"],
+        pages: [64]
+    },
+    {
+        id: "finesse",
+        name: "Finesse",
+        ranks: 1,
+        prereq: {agi: 9},
+        description: "<p>Une fois par rencontre de combat, vous pouvez relancer l'intégralité des $CD$ d'un unique jet de dégâts sans dépenser de point de chance.</p>",
+        sourcesId: ["core"],
+        pages: [64]
     }
 ]
