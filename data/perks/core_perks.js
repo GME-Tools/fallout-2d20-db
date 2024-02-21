@@ -321,5 +321,202 @@ module.exports = [
         description: "<p>Une fois par rencontre de combat, vous pouvez relancer l'intégralité des $CD$ d'un unique jet de dégâts sans dépenser de point de chance.</p>",
         sourcesId: ["core"],
         pages: [64]
+    },
+    {
+        id: "force_frappe",
+        name: "Force de frappe",
+        ranks: 1,
+        prereq: {for: 8},
+        description: "<p>Lorsque vous effectuez une attaque au corps à corps avec une arme de corps à corps à deux mains, votre attaque obtient l'effet de dégâts Brutal.</p>",
+        sourcesId: ["core"],
+        pages: [65]
+    },
+    {
+        id: "forgeron",
+        name: "Forgeron",
+        ranks: 3,
+        prereq: {for: 6, level: 2},
+        description: "<p>Vous povuez modifier les armes de corps à corps grâce à des mods d'arme. Chaque rang dans cette aptitude débloque un rang de mod : le rang 1 débloque les mods de rang 1, le rang 2 débloque les mods de rang 2, etc.</p><p>Chaque fois que vous sélectionnez cette aptitude, le niveau requis augmente de 4.</p>",
+        sourcesId: ["core"],
+        pages: [65]
+    },
+    {
+        id: "frappe_perforante",
+        name: "Frappe Perforante",
+        ranks: 1,
+        prereq: {for: 7},
+        description: "<p>Les attaques que vous effectuez à mains nues ou avec une arme de corps à corps à lames obtiennent l'effet de dégâts Perforant 1. Si elles bénéficient déjà de cet effet, la valeur de ce dernier augmente de 1.</p>",
+        sourcesId: ["core"],
+        pages: [65]
+    },
+    {
+        id: "fusilier",
+        name: "Fusilier",
+        ranks: 2,
+        prereq: {agi: 7, level: 2},
+        description: "<p>Lorsque vous effectuez une attaque avec une arme à distance à deux mains dotée d'une cadence de tir inférieure ou égale à 2 (à l'exception des armes lourdes), ajoutez +1 $CD$ aux dégâts de l'arme pa rang dans cette aptitude.</p><p>De plus, au rang 2, ajoutez l'effet de dégâts Perforant 1. Si l'attaque bénéficie déjà de cet effet, la valeur de ce dernier augmente de 1. Chaque fois que vous sélectionnez cette aptitude, le niveau requis augmente de 4.</p>",
+        sourcesId: ["core"],
+        pages: [65]
+    },
+    {
+        id: "fusion",
+        name: "Fusion",
+        ranks: 1,
+        prereq: {per: 10},
+        description: "<p>Lorsque vous tuez un ennemi avec une arme à énergie, il explose. Jetez un nombre de $CD$ égal à la moitié de la valeur de dégâts de l'arme (arrondie à l'inférieur). Pour chaque Effet obtenu, une créature située à portée courte ou inférieure de votre victime (en commençant par la plus proche) subit un nombre de points de dégâts énergétiques égal au total obtenu sur les $CD$.</p>",
+        sourcesId: ["core"],
+        pages: [65]
+    },
+    {
+        id: "guerison_rapide",
+        name: "Guérison Rapide",
+        ranks: 1,
+        prereq: {end: 6, no_robots: true},
+        description: "<p>Lorsque vous effectuez un test d'<b>END + Survie</b> pour traiter vos propres blessures, le premier d20 supplémentaire est gratuit. La limite de 5d20 s'applique toujours à la réserve.</p>",
+        sourcesId: ["core"],
+        pages: [65]
+    },
+    {
+        id: "guerisseur",
+        name: "Guérisseur",
+        ranks: 3,
+        prereq: {int: 7, level: 1},
+        description: "<p>Lorsque vous soignez les PV d'un patient par l'action mineure Porter secours, soignez 1 PV supplémentaire par rang dans cette aptitude. Chaque fois que vous sélectionnez cette aptitude, le niveau requis augmente de 5.</p>",
+        sourcesId: ["core"],
+        pages: [65]
+    },
+    {
+        id: "ho_hisse",
+        name: "Ho-Hisse !",
+        ranks: 1,
+        prereq: {for: 8},
+        description: "<p>Lorsque vous effectuez une attaque à distance avec un projectile, vous pouvez dépenser 1 PA pour augmenter d'un niveau la portée de l'arme : de courte à moyenne ou de moyenne à longue.</p>",
+        sourcesId: ["core"],
+        pages: [65]
+    },
+    {
+        id: "action_boy",
+        name: "Homme/Femme d'Action",
+        ranks: 1,
+        description: "<p>Lorsque vous dépensez des PA pour obtenir une action capitale supplémentaire, vous ne subissez pas d'augmentation de difficulté pour le test de compétence lié à cette action.</p>",
+        sourcesId: ["core"],
+        pages: [66]
+    },
+    {
+        id: "infiltrateur",
+        name: "Infiltrateur",
+        ranks: 1,
+        prereq: {per: 8},
+        description: "<p>Vous pouvez relancer 1d20 lors de tout test de Crochetage destiné à déverrouiller une porte ou un conteneur.</p>",
+        sourcesId: ["core"],
+        pages: [66]
+    },
+    {
+        id: "infirmier",
+        name: "Infirmier",
+        ranks: 1,
+        prereq: {int: 8},
+        description: "<p>Lorsque vous utilisez l'action mineure Porter secours pour essayer de soigner une blessure, vous pouvez relancer 1d20.</p>",
+        sourcesId: ["core"],
+        pages: [66]
+    },
+    {
+        id: "taille_compte",
+        name: "La Taille Compte",
+        ranks: 3,
+        prereq: {end: 7, agi: 6},
+        description: "<p>Lorsque vous effectuez une attaque à distance avec une arme lourde, ajoutez +1 $CD$ aux dégâts de l'arme par rang dans cette aptitude. Chaque fois que vous sélectionnez cette aptitude, le niveau requis augmente de 4.</p>",
+        sourcesId: ["core"],
+        pages: [66]
+    },
+    {
+        id: "locomotive",
+        name: "Locomotive",
+        ranks: 2,
+        prereq: {for: 9, end: 7, level: 1},
+        description: "<p>Au prix d'une action capitale, vous pouvez charger si vous portez une armure assistée ou petes un super mutant. Il s'agit d'une action de déplacement et vous ne pouvez pas vous déplacer ou sprinter au cours du même tour. Lorsque vous entreprenez cette action, vous vous placez à portée de main d'un ennemi situé à portée moyenne (1 zone) ou inférieure, puis effectuez un test de <b>FOR + Athlétisme</b> de difficulté 2. En cas de réussite, votre ennemi subit vos dégâts à mains nues normaux et vous le renversez.</p><p>Au rang 2, ajoutez +1 $CD$ et l'effet de dégâts Etourdissant aux dégâts infligés. A la discrétion du MJ, des créatures particulièrement massives ou robustes peuvent ne pas être renversées par cette action. Chaque fois que vous sélectionnez cette aptitude, le niveau requis augmente de 5.</p>",
+        sourcesId: ["core"],
+        pages: [66]
+    },
+    {
+        id: "mains_lestes",
+        name: "Mains lestes",
+        ranks: 1,
+        prereq: {agi: 8},
+        description: "<p>Vous pouvez recharger plus rapidement vos armes à feu. Lorsque vous effectuez une attaque à distance, vous pouvez dépenser 2 PA pour augmenter de +2 la cadence de tir de votre arme pour cette attaque uniquement.</p>",
+        sourcesId: ["core"],
+        pages: [66]
+    },
+    {
+        id: "maitre_voleur",
+        name: "Maître-Voleur",
+        ranks: 1,
+        prereq: {per: 8, agi: 9},
+        description: "<p>Lorsque vous entreprenez un test pour crocheter une serrure ou faire les poches de quelqu'un, la difficulté du test de votre adversaire pour vous repérer augmente de +1.</p>",
+        sourcesId: ["core"],
+        pages: [66]
+    },
+    {
+        id: "marchand_sable",
+        name: "Marchand de Sable",
+        ranks: 1,
+        prereq: {agi: 9},
+        description: "<p>Lorsque vous effectuez une attaque furtive avec une arme équipée d'un silencieux, ajoutez +2 $CD$ aux dégâts de l'arme. Vous ne tirez aucun bénéfice de cette aptitude si vous portez une armure assistée.</p>",
+        sourcesId: ["core"],
+        pages: [67]
+    },
+    {
+        id: "metabolisme_rapide",
+        name: "Métabolisme Rapide",
+        ranks: 3,
+        prereq: {end: 6, level: 1, no_robots: true},
+        description: "<p>Lorsque vous récupérez des PV par un autre moyen que le repos, vous récupérez 1 PV supplémentaire par rang dans cette aptitude. Chaque fois que vous sélectionnez cette aptitude, le niveau requis augmente de 3.</p>",
+        sourcesId: ["core"],
+        pages: [67]
+    },
+    {
+        id: "mysterieux_etranger",
+        name: "Mystérieux Etranger",
+        ranks: 1,
+        prereq: {chan: 7},
+        description: "<p>De temps à autre, un Mystérieux étranger vous vient en aide, avec des résultats mortels. Au début d'une rencontre de combat, vous pouvez dépenser 1 point de chance. Si vous le faites, le MJ peut faire apparaître, à n'importe quel moment de la scène, le Mystérieux étranger : il effectue une unique attaque à distance contre un adversaire que vous avez déjà attaqué, ou qui vient de vous attaquer, puis disparaît. Si vous avez dépensé un point de chance, le MJ doit vous le restituer si le Mystérieux étranger n'est pas apparu.</p><p>L'étranger a une <b>AGI</b> de 10 et une compétence Armes légères de 6, et cette dernière est un atout personnel. Il lance toujours 3d20 pour son attaque, qu'il exécute avec un revolver .44 Magnum personnalisé, et elle inflige 8 $CD$ de dégâts balistiques Brutaux et Perforants 1. L'étranger apparaît toujours à la portée optimale de son arme. Toute tentative de retrouver l'étranger après son attaque est vouée à l'échec.</p>",
+        sourcesId: ["core"],
+        pages: [67]
+    },
+    {
+        id: "nature_audacieuse",
+        name: "Nature Audacieuse",
+        ranks: 1,
+        prereq: {cha: 7},
+        description: "<p>Lorsque vous entreprenez un test de compétence et achetez au moins 1d20 en octroyant des PA au meneur de jeu, vous pouvez relancer 1d20 du résultat. Vous ne pouvez pas sélectionner cette aptitude si vous disposez de Nature prudente.</p>",
+        sourcesId: ["core"],
+        pages: [67]
+    },
+    {
+        id: "nature_prudente",
+        name: "Nature Prudente",
+        ranks: 1,
+        prereq: {per: 7},
+        description: "<p>Lorsque vous entreprenez un test de compétence et achetez au moins 1d20 avec des points d'action, vous pouvez relancer 1d20 du résultat. Vous ne pouvez pas sélectionner cette aptitude si vous disposez de Nature audacieuse.</p>",
+        sourcesId: ["core"],
+        pages: [67]
+    },
+    {
+        id: "ninja",
+        name: "Ninja",
+        ranks: 1,
+        prereq: {agi: 8},
+        description: "<p>Lorsque vous effectuez une attaque furtive à mains nues ou avec une arme de corps à corps, ajoutez +2 $CD$ aux dégâts de l'attaque. Vous ne tirez aucun bénéfice de cette aptitude si vous portez une armure assistée.</p>",
+        sourcesId: ["core"],
+        pages: [67]
+    },
+    {
+        id: "nyctalope",
+        name: "Nyctalope",
+        ranks: 1,
+        prereq: {per: 7},
+        description: "<p>Vous réduisez de 1 l'augmentation de difficulté due à l'obscurité.</p>",
+        sourcesId: ["core"],
+        pages: [67]
     }
 ]
