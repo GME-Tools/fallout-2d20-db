@@ -13,8 +13,8 @@ module.exports = [
         dr: {balistic: 0, energy: 0, radiation: 0, poison: 0},
         attacks: [
             {
-                id: "bite",
-                name: "Bite",
+                id: "morsure",
+                name: "Morsure-",
                 test: {special: "CORPS", skill: "CaC"},
                 damage: {cd: 2, type: "balistique", effects: ["Brutal"]}
             }
