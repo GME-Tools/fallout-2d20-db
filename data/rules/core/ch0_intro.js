@@ -1,0 +1,75 @@
+module.exports = [
+  {
+    id: "introduction",
+    type: "chapter",
+    name: "Introduction",
+    sources: ["core"],
+    pages: [5],
+    rulesId: ["war_never_changes", "ce_dont_vous_avez_besoin"],
+  },
+  {
+    id: "war_never_changes",
+    type: "section",
+    name: "La Guerre. La Guerre ne meurt jamais",
+    sources: ["core"],
+    pages: [6],
+    rulesId: ["bienvenue_commonwealth", "content", "quetes"],
+  },
+  {
+    id: "bievenue_commonwealth",
+    type: "encart",
+    name: "Bienvenue dans le Commonwealth",
+    sources: ["core"],
+    pages: [7],
+  },
+  {
+    id: "content",
+    name: "Que contient ce livre ?",
+    sources: ["core"],
+    pages: [7],
+  },
+  {
+    id: "quetes",
+    name: "Quel genre de quête puis-je entreprendre ?",
+    sources: ["core"],
+    pages: [7],
+  },
+  {
+    id: "ce_dont_vous_avez_besoin",
+    type: "section",
+    name: "Ce dont vous avez besoin pour jouer",
+    sources: ["core"],
+    pages: [8],
+    rulesId: ["joueurs_meneur", "fiches_persos", "dice", "jetons", "papier"],
+  },
+  {
+    id: "joueurs_meneur",
+    name: "Des joueurs et un Meneur de Jeu",
+    sources: ["core"],
+    pages: [8],
+  },
+  {
+    id: "fiches_persos",
+    name: "Des fiches de personnages",
+    sources: ["core"],
+    pages: [8],
+  },
+  {
+    id: "dice",
+    name: "Des dés",
+    sources: ["core"],
+    pages: [9],
+  },
+  {
+    id: "jetons",
+    name: "Jetons, pions ou capsules",
+    sources: ["core"],
+    pages: [9],
+  },
+  {
+    id: "papier",
+    names: "Du papier et des crayons",
+    sources: ["core"],
+    pages: [9],
+  }
+];
