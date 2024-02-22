@@ -1,4 +1,4 @@
-module_exports = [
+module.exports = [
   {
     id: "ch2_combat",
     name: "Combat",
