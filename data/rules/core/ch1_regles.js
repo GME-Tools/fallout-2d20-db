@@ -25,6 +25,7 @@ module.exports = [
   {
     id: "test",
     name: "Tests de compétences",
+    type: "section",
     sources: ["core"],
     pages: [13],
     rulesId: [
@@ -70,7 +71,7 @@ module.exports = [
     name: "Réussites et difficulté",
     sources: ["core"],
     pages: [14],
-    rulesId: ["difficulte"]
+    rulesId: ["difficulte"],
   },
   {
     id: "difficulte",
@@ -147,7 +148,7 @@ module.exports = [
     name: "Marge de complication",
     sources: ["core"],
     pages: [17],
-    rulesId: ["marge_complication_table"]
+    rulesId: ["marge_complication_table"],
   },
   {
     id: "marge_complication_table",
@@ -166,9 +167,10 @@ module.exports = [
   {
     id: "pa",
     name: "Points d'Action",
+    type: "section",
     sources: ["core"],
     pages: [18],
-    rulesId: ["cout_pa", "conserver_pa", "reserve_pa", "acheter_pa"]
+    rulesId: ["cout_pa", "conserver_pa", "reserve_pa", "acheter_pa"],
   },
   {
     id: "cout_d20",
@@ -199,9 +201,10 @@ module.exports = [
   {
     id: "chance",
     name: "Chance",
+    type: "section",
     sources: ["core"],
     pages: [20],
-    rulesId: ["babioles, options_chance", "regagner_chance"]
+    rulesId: ["babioles, options_chance", "regagner_chance"],
   },
   {
     id: "options_chance",
